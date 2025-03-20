@@ -11,7 +11,7 @@ SandBox-Broker is a security tool that monitors and hooks syscalls & functions r
 
 ## Installation
 ```bash
-git clone https://github.com/4f3rg4n/SandBox-Broker.git`
+git clone https://github.com/4f3rg4n/SandBox-Broker.git
 cd SandBox-Broker
 make
 ```
