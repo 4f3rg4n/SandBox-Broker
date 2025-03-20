@@ -4,12 +4,12 @@ sandbox: files_hook.so network_hook.so
 	${CC} -o sandbox sandbox.c
 
 files_hook.so:
-	make -C dev/files
+	make -C files
 
 network_hook.so:
-	make -C dev/network
+	make -C network
 
 clean:
-	make clean -C dev/files
-	make clean -C dev/network
+	make clean -C files
+	make clean -C network
 	rm -f sandbox
