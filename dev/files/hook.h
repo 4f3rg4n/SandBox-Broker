@@ -7,5 +7,7 @@
 
 #define MAX_PATH_SIZE 100
 
-char* hook_hanlder(char* path, char* func, int flags);
+char* files_hook_hanlder(char* path, char* func, int flags);
 int open_hook(const char *path, int flags);
+
+extern unsigned long int hook_id;
