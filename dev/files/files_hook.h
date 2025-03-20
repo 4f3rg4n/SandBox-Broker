@@ -1,4 +1,7 @@
+#ifndef FILES_HOOK_H
+#define FILES_HOOK_H
 #define _GNU_SOURCE
+
 #include <stdio.h>
 #include <dlfcn.h>
 #include <fcntl.h>
@@ -35,3 +38,5 @@ size_t fwrite_hook(const void *ptr, size_t size, size_t count, FILE *stream);
 /* Globals */
 extern unsigned long int hook_id;
 extern fd_obj* fd_list; 
+
+#endif // FILES_HOOK_H

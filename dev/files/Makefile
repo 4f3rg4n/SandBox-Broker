@@ -2,7 +2,7 @@ CC = gcc
 SOFLAGS = -shared -fPIC
 CFLAGS = -I.
 
-hook.so: hook.c hook.h
+files_hook.so: files_hook.c files_hook.h
 	${CC} ${SOFLAGS} ${CFLAGS} -o $@ $< -ldl
 
 clean:

@@ -1,5 +1,4 @@
-#define _GNU_SOURCE
-#include "hook.h"
+#include "files_hook.h"
 
 /* save real syscalls */
 static int (*real_open)(const char*, int, ...) = NULL;
