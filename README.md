@@ -31,4 +31,3 @@ make
 
 #### Network Hooks
 - functions: `socket`, `connect`, `send`, `recv`.
-```
