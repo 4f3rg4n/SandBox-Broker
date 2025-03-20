@@ -2,8 +2,8 @@ CC = gcc
 SOFLAGS = -shared -fPIC
 CFLAGS = -I.
 
-files_hook.so: files_hook.c files_hook.h
+network_hook.so: network_hook.c network_hook.h
 	${CC} ${SOFLAGS} ${CFLAGS} -o $@ $< -ldl
 
 clean:
-	rm -f files_hook.so
+	rm -f network_hook.so
