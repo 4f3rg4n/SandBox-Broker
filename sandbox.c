@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     }
 
     /* hook libs */
-    setenv("LD_PRELOAD", "dev/files/files_hook.so:dev/network/network_hook.so", 1); 
+    setenv("LD_PRELOAD", "files/files_hook.so:network/network_hook.so", 1); 
 
     /* exec process under sandbox broker */
     execvp(argv[1], &argv[1]);  
